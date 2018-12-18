@@ -13,10 +13,10 @@ const luke = {
     }, 1000)
   },
   sayArrowId: function () {
-    setTimeout(() => {// this会向上层作用域链中寻找
+    setTimeout(() => {// this会向上层作用域链中寻找,即sayArrowId这个函数中的this
       console.log(this.id)
     }, 1000)
-  },
+  }, 
   sayTwoArrowId: () => {
     setTimeout(() => {
       console.log(this.id)
